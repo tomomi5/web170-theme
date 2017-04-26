@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+*{
+    padding:0;
+    margin:0;
+    color: #9399a0;
+    font-family: Courier, monospace;
+}
+
+/* text comment mike */
+
+
+/* styles for Header */
+
+img#logo{
+    
+    display:block;
+    margin:40px auto 20px auto;
+}
+
+/*
+h1.title{
+    text-align:center;
+    font-weight:100;
+    letter-spacing:8px;
+    margin-top:30px;
+    padding:10px 0;
+    font-size:36px;
+}
+
+
+h1.title a{
+    text-decoration:none;
+}
+
+*/
+
+
+
+
+
+
+/* styles for footer */
+
+footer{
+    clear:both;
+    text-align:center;
+    padding:30px 0;
+    
+}
+
+
+
+
+/*styles for home page */
+
+blockquote{
+    font-style:italic;
+    font-size:16px;
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:50px;
+    font-family:"Times New Roman", Times, serif;
+    letter-spacing:1px;
+    word-spacing:4px;
+    clear:both;
+}
+
+img.main{
+    
+    display:block;
+    width:100%;
+    margin:20px auto 20px auto;
+}
+
+
+
+
+/* styles for main page */
+
+
+/* global */
+div#main{
+    max-width:900px;
+    margin:0 auto;
+}
+
+h2{
+    clear:both;
+    font-weight:100;
+    font-size:34px;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+
+/* Desktop */
+@media all and (min-width:1280px){
+
+
+
+img#aboutleft{
+    display:block;
+    float:left;
+    margin:30px 20px;
+}
+
+p#rightp{
+    float:right;
+    width:55%;
+    margin-top:30px;
+    margin-right:20px;
+    line-height:25px;
+    font-size:18px;
+}
+
+p#leftp{
+    float:left;
+    width:55%;
+    line-height:25px;
+    margin-top:30px;
+    margin-left:20px;
+    font-size:18px;
+    
+}
+
+
+img#aboutright{
+    display:block;
+    float:right;
+    margin:50px 20px;
+
+}
+    
+}
+
+/* tablet */
+@media all and (min-width:481px) and (max-width:1279px){
+    
+    img#aboutleft, img#aboutright{
+    display:block;
+    margin:30px auto;
+}
+
+p#rightp, p#leftp{
+    float:right;
+    margin:30px 50px;
+    line-height:25px;
+    font-size:18px;
+}
+    
+    
+}
+
+
+/* mobile */
+
+@media all and (max-width:480px){
+    
+h2{
+    text-align:center;
+}
+    
+img#aboutleft, img#aboutright{
+    display:block;
+    margin:30px auto;
+}
+
+p#rightp, p#leftp{
+    float:right;
+    margin:30px 20px;
+    line-height:25px;
+    font-size:18px;
+}
+
+
+}

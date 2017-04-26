@@ -1,0 +1,77 @@
+/* styles for NAVIGATION */
+
+
+nav{
+    width:50%;
+    margin:0 auto;
+    display:block;
+}
+
+ul.topnav{
+    height:50px;
+}
+
+ul.topnav li{
+    width:25%;
+    float:left;
+    list-style-type:none;
+    text-decoration:none;
+    text-align:center;
+    line-height:50px;
+    font-size:18px;
+}
+
+ul.topnav a {
+    text-decoration:none;
+}
+
+ul.topnav a:hover{
+    color:#f7c774;
+}
+
+ul.topnav li.icon{
+    display:none;
+}
+
+@media screen and (max-width:680px){
+    nav{
+        width:100%;
+    }
+    ul.topnav li:not(:first-child){
+        display: none;
+    }
+    ul.topnav li.icon{
+        float:right;
+        display:inline-block;
+    }
+}
+
+@media screen and (max-width:680px){
+    ul.topnav.responsive {
+        position:relative;
+        display:inline-block;
+        
+    }
+    
+    
+    ul.topnav.responsive li{
+        float:none;
+        display:inline-block;
+        width:100%;
+    }
+    
+    ul.topnav.responsive li.icon{
+        position:absolute;
+        right:0;
+        top:0;
+        width:50px;
+    }
+    
+    ul.topnav.responsive li a {
+        display:block;
+        text-align:left;
+        padding-left:20px;
+    }
+    
+}
+
