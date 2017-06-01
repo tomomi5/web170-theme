@@ -1,5 +1,10 @@
-<div class="sidebar">
+<div id="sidebar">
 <div id="sub-navigation" class="widget">
+    
+    <h2 class="sub-navigation" class="widget">
+    <?php echo get_the_title($post->post_parent); ?>
+    </h2>
+    
     <?php if(is_page()): //if we are in page ?>
     <ul class = "sub-navigation-items">
         <?php
@@ -30,9 +35,9 @@
     
     <!-- quotes-->
     
-    <?php if(get_post_meta($post->ID, 'Quote', true)): 
+    <?php if(get_post_meta($post->ID, 'Quotes', true)): 
     //check if there is a quotes ?>
-    <blockquote><?php echo get_post_meta($post->ID, 'Quote', true); //pick quote from custome field ?></blockquote>
+    <blockquote><?php echo get_post_meta($post->ID, 'Quotes', true); //pick quote from custome field ?></blockquote>
     
     <?php endif; ?>
     <!-- end quotes -->

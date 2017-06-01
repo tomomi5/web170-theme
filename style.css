@@ -36,6 +36,13 @@ a {
     margin: 5px 20px 20px 0;
 }
 
+/* styles for sidebar */
+#sidebar{
+    width:30%;
+    float:right;
+    display:block;
+}
+
 
 
 /* styles for Header */
@@ -172,8 +179,9 @@ img.attachment-full{
 
 /* global */
 
-div#main{
-    width:70%;
+#main{
+    width:60%;
+    padding:0 20px;
     float:left;
     display:block;
 }
@@ -270,9 +278,4 @@ p#rightp, p#leftp{
 
 }
 
-/* styles for sidebar */
-#sidebar{
-    width:30%;
-    float:right;
-    display:block;
-}
+
