@@ -2,12 +2,13 @@
 <html lang="en">
     
 <head>
-    <title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+    <title><?php get_my_title_tag(); ?></title>
     <meta charset= "UTF-8">
+    <meta name="description" content="<?php echo strip_tags(get_the_excerpt()); ?>" />
     <link rel="stylesheet" type="text/css" media= "all" href="<?php bloginfo('stylesheet_url'); ?>"/>
-    <link rel="stylesheet" href="flexslider.css" type="text/css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="jquery.flexslider.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/jquery.flexslider.js"></script>
     
     <script type="text/javascript" charset="utf-8">
   $(window).load(function() {
